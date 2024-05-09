@@ -1,0 +1,24 @@
+.tourcard-heading{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    transition: all 300ms ease;
+}
+.tourcard-container:hover .tourcard-heading{
+    bottom: 20px;
+    font-size:x-large;
+}
+
+
+
+/* <div className="flex justify-around items-center bg-red-300">
+<span className="text-base font-semibold">
+  {/* {priceConversion(activity?.lowPrice, selectedCurrency, true)} */
+  /* {` `} */
+  /* {size === "default" && ( */
+    /* <span className=" dark:text-neutral-400 font-bold"> */
+     /* {packageItem?.totalPrice} AED */
+    /* </span> */
+  /* )} */
+/* </span> */ 
+/* </div> */

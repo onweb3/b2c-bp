@@ -1,0 +1,28 @@
+
+.tour-detail-banner-container::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 10%;
+height: 100%;
+backdrop-filter: blur(15px);
+z-index: 1;
+}
+.tour-detail-banner-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    }
+    .shadow-all-sides {
+        box-shadow: 
+          0 8px 8px -8px rgba(0, 0, 0, 0.2), /* Top shadow */
+          8px 0 8px -8px rgba(0, 0, 0, 0.2), /* Right shadow */
+          0 -8px 8px -8px rgba(0, 0, 0, 0.2), /* Bottom shadow */
+          -8px 0 8px -8px rgba(0, 0, 0, 0.2); /* Left shadow */
+      }
+      

@@ -1,0 +1,26 @@
+.tour-img-carousel{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.tour-img-carousel::-webkit-scrollbar{
+    display: none;
+  }
+.tour-carousel-card{
+    scroll-snap-align: start;
+}
+
+.movearrowTop{
+    transform: translateY(-50%);
+    transition: opacity 300ms ease;
+   opacity: 0;
+}
+
+.tour-img-container:hover .movearrowTop {
+    opacity: 1 ;
+}
+.tour-img-carousel  img{
+
+    user-select: none;
+}

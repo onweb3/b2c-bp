@@ -1,0 +1,7 @@
+.cookie-container{
+    transition: all 500ms ease; 
+}
+
+.move-dawn{
+    transform: translateY(150%);
+}

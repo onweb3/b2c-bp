@@ -1,0 +1,63 @@
+.banner-img-carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 15px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+@media screen and (max-width: 1124px){
+    .banner-img-carousel {
+      grid-auto-columns: calc((100%/3) - 12px);
+    }
+  }
+  @media screen and (max-width: 900px){
+    .banner-img-carousel {
+      grid-auto-columns: calc((100%/2) - 9px);
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px){
+    .banner-img-carousel {
+      grid-auto-columns: calc(100%);
+    }
+  }
+  
+
+.banner-img-carousel::-webkit-scrollbar{
+    display: none;
+  }
+.tour-carousel-left{
+    scroll-snap-align: start;
+}
+
+.tour-carousel-right{
+    scroll-snap-align: end;
+}
+
+.banner-carousel-card{
+    scroll-snap-align: start;
+}
+
+.movearrowTop{
+    transform: translateY(-50%);
+    transition: opacity 300ms ease;
+   opacity: 0;
+}
+
+.banner-img-container:hover .movearrowTop {
+    opacity: 1 ;
+}
+.banner-img-carousel  img{
+
+    user-select: none;
+}
+
+.banner-img-carousel.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }

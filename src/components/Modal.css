@@ -1,0 +1,27 @@
+.modal-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(2, 0, 0, 0.4);
+    overflow-y:scroll ;
+}
+
+.modal-content{
+animation: modal 700ms ease;
+}
+
+@keyframes modal {
+    0% {
+      transform: translateY(-10%);
+      opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+      transform: translateY(0%);
+    }
+  }

@@ -1,0 +1,50 @@
+
+.img-highlights-animation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+  }
+  
+  .highlights-animation-container {
+      transition: transform 500ms ease;
+  }
+  .animation-line{
+  
+     position: absolute;
+     width: 0%;
+     height: 2%;
+     background-color:#094793;
+     top: 0;
+     left: 0;
+     transition: width 800ms ease;
+  }
+  
+  .highlights-animation-container:hover  .animation-line {
+      width: 100%;
+  }
+  
+  
+  .highlights-animation-container:hover  .img-highlights-animation {
+      animation: blurmovingshade  700ms ease;
+  }
+  
+  .highlights-animation-container:hover {
+      transform: translateY(-2%);
+  }
+  
+  @keyframes blurmovingshade{
+      0%{
+          width: 0;
+          height: 0;
+      }
+      50%{
+          opacity: .2;
+      }
+      100%{
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+      }
+  }
